@@ -1,0 +1,15 @@
+debug/login.o
+debug/main.o
+debug/editpoem.o
+debug/landingpage.o
+debug/mainwindow.o
+debug/register.o
+debug/viewpoem.o
+debug/writepoem.o
+debug/moc_editpoem.o
+debug/moc_landingpage.o
+debug/moc_login.o
+debug/moc_mainwindow.o
+debug/moc_register.o
+debug/moc_viewpoem.o
+debug/moc_writepoem.o

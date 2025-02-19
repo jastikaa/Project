@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WritePoem</class>
+ <widget class="QDialog" name="WritePoem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Write Poem</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label_title">
+     <property name="text">
+      <string>Write and Submit Your Poem</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <property name="fieldGrowthPolicy">
+      <enum>QFormLayout::FieldsStayAtSizeHint</enum>
+     </property>
+     <property name="labelAlignment">
+      <set>Qt::AlignLeft</set>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_authorName">
+       <property name="text">
+        <string>Author Name:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEdit_authorName"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_poemTitle">
+       <property name="text">
+        <string>Poem Title:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEdit_poemTitle"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_genre">
+       <property name="text">
+        <string>Genre:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="comboBox_genre">
+       <item>
+        <property name="text">
+         <string>Romantic</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nature</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Haiku</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Free Verse</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="textEdit_poemContent">
+     <property name="placeholderText">
+      <string>Write your poem here...</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton_submitPoem">
+     <property name="text">
+      <string>Submit Poem</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
